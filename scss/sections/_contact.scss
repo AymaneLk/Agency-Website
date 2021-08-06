@@ -1,0 +1,118 @@
+.contact {
+    @include padding-lg;
+
+    @include padding-sm;
+
+    &-text {
+        h3 {
+            margin-bottom: toRem(24);
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: toRem(60);
+
+        @include breakpoint-less(small) {
+            flex-direction: column;
+        }
+        
+        &-form {
+            position: relative;
+            background: #f9f9f9;
+            width: calc(100% - 400px);
+            padding: 60px 40px 20px;
+
+            @include breakpoint-less(small) {
+                width: toRem(350);
+                padding: 10px 40px;
+                margin-bottom: toRem(20);
+            }
+
+            form {
+                width: 100%;
+            }
+
+            .row {
+                display: flex;
+                width: 100%;
+
+                @include breakpoint-less(small) {
+                    display: block;
+                }
+
+                .input50 {
+                    width: 50%;
+                    margin: 0 toRem(10);
+
+                    @include breakpoint-less(small) {
+                        width: 100%;
+                    }
+                }
+
+                .input100 {
+                    width: 100%;
+                    margin: 0 toRem(10);
+                }
+
+                input, textarea {
+                    border: 1px solid rgba(0, 0, 0, .2);
+                    width: 100%;
+                    color: #111;
+                    background-color: transparent;
+                    padding: toRem(10);
+                    margin: toRem(10);
+                    outline: none;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    resize: none;
+                }
+
+                textarea {
+                    height: 150px;
+                }
+
+                input[type="submit"] {
+                    background: $secondary-color;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    letter-spacing: 2px;
+                    cursor: pointer;
+                    border: none;
+                }
+            }
+        }
+
+        &-info {
+            .info-box {
+                display: flex;
+                align-items: flex-start;
+                padding: 60px 40px 20px;
+                width: toRem(350);
+                background: #f9f9f9;
+
+                .contact-icon {
+                    width: toRem(20);
+                    margin-right: toRem(40);
+                }
+
+                .details {
+                    
+                    h4 {
+                        color: $secondary-color;
+                    }
+
+                    p {
+                        margin-top: toRem(15);
+                    }
+
+                    a {
+                        color: #111;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+}
+
+h3 {
+    font-size: toRem(29);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+//HELPER CLASSES
+.go-back {
+    position: absolute;
+    top: 35px;
+    left: 50px;
+    font-size: 2rem;
+    color: hsl(249, 82%, 43%);
+
+    @include breakpoint-less(medium){
+        display: none;
+    }
+}
+
+//STYLING SCROLL BAR
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $secondary-color;
+    border-radius: 10px;
+}

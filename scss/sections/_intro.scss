@@ -1,0 +1,67 @@
+.intro {
+    &-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 110%;
+
+        img {
+            width: 100%;
+        }
+
+        @include breakpoint-less(medium) {
+            display: none;
+        }
+    }
+
+    &__content {
+        padding-left: toRem(100);
+
+        @include breakpoint-less(medium){
+            padding-left: toRem(40);
+        }
+        
+        &-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+
+            h3 {
+                max-width: toRem(300);
+                margin-bottom: toRem(29);
+                z-index: 9999;
+
+                @include breakpoint-less(small){
+                    max-width: toRem(400);
+                    font-size: 1.8rem;
+                }
+            }
+
+            p {
+                max-width: toRem(580);
+                margin-bottom: toRem(48);
+                line-height: 1.7;
+                font-size: 1.1rem;
+                z-index: 9999;
+
+                @include breakpoint-less(small){
+                    max-width: toRem(400);
+                    font-size: 1.1rem;
+                    margin-bottom: toRem(40);
+                }
+            }
+
+            button {
+                border: none;
+                color: #fff;
+                background: $primary-color;
+                font-size: .96rem;
+                letter-spacing: .8px;
+                padding: toRem(15) toRem(30);
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.pages {
+
+    &__container {
+        
+        &-sm {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 60px;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                color: #111;
+                font-size: 1.6rem;
+                margin-bottom: toRem(32);
+                cursor: pointer;
+                @include transition;
+            }
+
+            .mail-icon {
+                position: absolute;
+                bottom: toRem(30);
+            }
+        }
+
+        &-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            
+            a {
+                color: #111;
+                font-size: 2.2rem;
+                font-weight: 300;
+
+                @include breakpoint-less(medium) {
+                    font-size: 1.9rem;
+                }
+            }
+        }
+    }
+}

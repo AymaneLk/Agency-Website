@@ -1,0 +1,15 @@
+.header {
+
+    .logo {
+        position: absolute;
+        top: toRem(32);
+        left: toRem(100);
+        z-index: 9999;
+
+        @include breakpoint-less(medium) {
+            top: toRem(10);
+            left: toRem(20);
+            font-size: 1.5rem;
+        }
+    }
+}

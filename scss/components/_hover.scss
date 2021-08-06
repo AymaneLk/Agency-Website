@@ -1,0 +1,93 @@
+//WOBBLE VERTICAL ON HOVER EFFECT
+@-webkit-keyframes wobble-vertical-on-hover {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+@keyframes wobble-vertical-on-hover {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+}
+.wobble-vertical-on-hover, .wobble-vertical-on-hover:focus, .wobble-vertical-on-hover:active {
+    -webkit-animation-name: wobble-vertical-on-hover;
+    animation-name: wobble-vertical-on-hover;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    &:hover {
+        animation: none;
+    }
+}
+
+//PAGES_CONTAINER LINKS HOVER
+.pages__container-links {
+    a:hover {
+        color: $primary-color;
+    }
+}
+
+//PAGES_CONTAINER ICON HOVER
+.pages__container-sm {
+    i:hover {
+        color: $primary-color;
+    }
+}
+
+//BUTTON HOVER
+button:hover {
+    letter-spacing: .4px;
+}
+
+//SERVICES ITEM ON HOVER
+.services__container-grid-item:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+}
+
+//WORK ITEM ON HOVER 

@@ -1,0 +1,50 @@
+// FROM PX TO REM FUNCTION
+@function toRem($value) {
+    $remValue: ($value / 16) + rem;
+    @return  $remValue;
+}
+
+// BREAKPOINTS MIXIN
+@mixin breakpoint($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (min-width: $breakpoint-value) {
+        @content;
+    }
+}
+
+@mixin breakpoint-less($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (max-width: $breakpoint-value) {
+        @content;
+    }
+}
+
+// TRANSITION MIXIN
+@mixin transition {
+    transition: all 200ms;
+}
+
+//PADDING & MARGIIN FOR LARGE DEVICES
+@mixin padding-lg {
+    margin-top: 60px;
+    padding: 100px;
+}
+
+//PADDING & MARGIIN FOR SMALL DEVICES
+@mixin padding-sm {
+    @include breakpoint-less(medium) {
+        padding: toRem(100) toRem(40);
+    }
+}
+
+//MARGIN FOR TEXT CONTAINER
+@mixin textMargin {
+    &-text {    
+        margin-bottom: toRem(50);
+        h3 {
+            margin-bottom: toRem(32);
+        }
+    }
+}
