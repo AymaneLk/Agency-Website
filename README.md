@@ -13,5 +13,5 @@
 ![image](https://user-images.githubusercontent.com/24440328/128559757-4b1d4c35-c2f4-4973-9ca2-eff68d5b2eae.png)
 
 ## Contact Page ##
-![image](https://user-images.githubusercontent.com/24440328/128559817-8c13531d-6ee1-4a6c-b462-1e76061f31bb.png)
+![image](https://user-images.githubusercontent.com/24440328/128559817-8c13531d-6ee1-4a6c-b462-1e76061f31bb.png).
 
